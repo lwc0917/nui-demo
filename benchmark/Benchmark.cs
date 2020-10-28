@@ -196,10 +196,10 @@ class HelloWorldExample : NUIApplication
 
         for (int i = 0; i < actorCount; ++i)
         {
-            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * 480, 0, 0.0f), 0, 300, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
-            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * 480, 0, 0.0f), 300, 600, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
-            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * 480, 0, 0.0f), 600, 800, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
-            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(12.0f * 480, 0, 0.0f), 800, 1000, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
+            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * Window.Instance.Size.Width, 0, 0.0f), 0, 3000, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
+            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * Window.Instance.Size.Width, 0, 0.0f), 3000, 6000, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
+            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(-4.0f * Window.Instance.Size.Width, 0, 0.0f), 6000, 8000, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
+            mScroll.AnimateBy(mImageView[i], "Position", new Vector3(12.0f * Window.Instance.Size.Width, 0, 0.0f), 8000, 10000, new AlphaFunction(AlphaFunction.BuiltinFunctions.EaseOut));
         }
 
         mScroll.Play();
